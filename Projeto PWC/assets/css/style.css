@@ -88,3 +88,7 @@
     border-color: black !important;  
     color: black !important;        
 }
+/*Barra de pesquisa*/
+.barra-de-pesquisa{
+    width: 415px;
+}
