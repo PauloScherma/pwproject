@@ -1,169 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!--Controlo do tipo dos caracteres-->
-        <meta charset="UTF-8">
-        <!--Controlo da responsividade da página-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--links para o nosso css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        <!--link do google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <!--link do bootstrap-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <title>Favoritos</title>
-    </head>
+
+<head>
+  <!--Controlo do tipo dos caracteres-->
+  <meta charset="UTF-8">
+  <!--Controlo da responsividade da página-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--links para o nosso css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--link do google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!--link do bootstrap-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <title>Favoritos</title>
+</head>
+
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg bg-white">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="https://www.ipleiria.pt/"><img class="tamanho-logo" src="assets/img/LogotipoPretoPolitécnico.png" alt="Logo IPLeiria" class=""></a>   
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse ms-auto" id="navbarNav">
-                <ul class="navbar-nav align-items-center ms-auto">
-                  <li class="nav-item pe-3">
-                    <a class="nav-link active home-azul" aria-current="page" href="home.html">Home</a>
-                  </li>
-                  <li class="nav-item pe-3">
-                    <a class="nav-link active" href="paises.html">Países</a>
-                  </li>
-                  <li class="nav-item pe-3">
-                    <a class="nav-link active" href="favoritos.html">Favoritos</a>
-                  </li>
-                  <li class="nav-item pe-3">
-                    <a class="nav-link active" href="sobre.html" aria-disabled="true">Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="contactos.html" aria-disabled="true"><button type="button" class="btn btn-outline-primary rounded-0">Contactos</button></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </div>
-    <div class="container my-5 py-5">
-      <div class="text-center">
-        <h2 class="tamanho-letra-titulo">Favoritos</h2>
-        <p>Aqui pode encontrar os países que marcou como favoritos enquanto explorava o nosso site.<br>
-          Salve os países que chamaram sua atenção para acessá-los mais facilmente.</p>
-        <div class="container d-flex justify-content-center align-items-center my-5 ">
-          <form class="d-flex barra-de-pesquisa ">
-            <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-          </form>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.ipleiria.pt/"><img class="tamanho-logo"
+            src="assets/img/LogotipoPretoPolitécnico.png" alt="Logo IPLeiria" class=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+          <ul class="navbar-nav align-items-center ms-auto">
+            <li class="nav-item pe-3">
+              <a class="nav-link active home-azul" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link active" href="paises.html">Países</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link active" href="favoritos.html">Favoritos</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link active" href="sobre.html" aria-disabled="true">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contactos.html" aria-disabled="true"><button type="button"
+                  class="btn btn-outline-primary rounded-0">Contactos</button></a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container my-5 py-5">
+    <div class="text-center">
+      <h2 class="tamanho-letra-titulo">Os seus países favoritos</h2>
+      <p>Escolha um destino para explorar a sua singularidade, cultura e atrações. Descubra os lugares<br>
+        mais cativantes do mundo, cada um oferecendo experiências inesquecíveis.</p>
+      <!--Barra de pesquisa-->
+      <div class="container d-flex justify-content-center align-items-center my-5 ">
+        <form class="d-flex barra-de-pesquisa ">
+          <input class="form-control" type="search" placeholder="Escolha o pais" aria-label="Pesquisar">
+        </form>
+      </div>
     </div>
-    <!--1º Card-->
     <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!--1º Card-->
       <div class="col">
         <div class="card h-100 rounded-0 px-4 pt-4 card-shadow rounded-3">
           <img src="assets/img/Bandeira.png" class="card-img-top" alt="...">
           <div class="card-body d-flex justify-content-center align-items-center">
-            <h2 class="card-title text-center">EUA</h2>
-            <button type="button" class="btn">
-              <i class="bi bi-star-fill"></i>
+            <h2 class="card-title text-center d-inline">EUA</h2>
+            <button type="button" class="btn border-0 starButton">
+              <i class="bi bi-star icon"></i>
             </button>
           </div>
         </div>
       </div>
-    <!--2º Card-->
+      <!--Final primeiro card-->
       <div class="col">
         <div class="card h-100 rounded-0 px-4 pt-4 card-shadow rounded-3">
           <img src="assets/img/Bandeira1.png" class="card-img-top" alt="...">
           <div class="card-body d-flex justify-content-center align-items-center">
-            <h2 class="card-title text-center d-inline">Canada</h2> 
-            <button type="button" class="btn">
-              <i class="bi bi-star-fill"></i>
+            <h2 class="card-title text-center d-inline">Canada</h2>
+            <button type="button" class="btn border-0 starButton">
+              <i class="bi bi-star icon"></i>
             </button>
           </div>
         </div>
       </div>
-    <!--3º Card-->
       <div class="col">
         <div class="card h-100 rounded-0 px-4 pt-4 card-shadow rounded-3">
           <img src="assets/img/Banderia2.png" class="card-img-top" alt="...">
           <div class="card-body d-flex justify-content-center align-items-center">
-            <h2 class="card-title text-center">Reino Unido</h2>
-            <button type="button" class="btn">
-              <i class="bi bi-star-fill"></i>
+            <h2 class="card-title text-center d-inline">Reino Unido</h2>
+            <button type="button" class="btn border-0 starButton">
+              <i class="bi bi-star icon"></i>
             </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-      <!--Footer-->
-      <div class="bg-light pt-5">
-        <div>
-          <div class="d-flex align-items-center justify-content-center">
-            <img class="tamanho-logo-footer" src="assets/img/LogotipoPretoPolitécnico.png">
+  <!--Footer-->
+  <div class="bg-light pt-5">
+    <div>
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="tamanho-logo-footer" src="assets/img/LogotipoPretoPolitécnico.png">
+      </div>
+      <!--Ancoras para outras paginas-->
+      <div class="d-block my-3 container">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="pe-5">
+            <a class="text-decoration-none text-dark active fw-semibold" aria-current="page" href="#">Home</a>
           </div>
-          <!--Ancoras para outras paginas-->
-          <div class="d-block my-3 container">
-              <div class="d-flex align-items-center justify-content-center">
-                <div class="pe-5">
-                    <a class="text-decoration-none text-dark active fw-semibold" aria-current="page" href="#">Home</a>
-                </div> 
-                <div class="pe-5">
-                    <a class="text-decoration-none text-dark active fw-semibold" href="#">Países</a>
-                </div> 
-                <div class="pe-5">  
-                    <a class="text-decoration-none text-dark active fw-semibold" href="#">Loja</a>
-                </div>  
-                <div class="pe-5">
-                    <a class="text-decoration-none text-dark active fw-semibold" href="#" aria-disabled="true">Sobre</a>
-                </div>
-                <div class=""> 
-                  <a class="text-decoration-none text-dark active fw-semibold" href="#" aria-disabled="true">Contactos</a>
-                </div>  
-              </div>
+          <div class="pe-5">
+            <a class="text-decoration-none text-dark active fw-semibold" href="#">Países</a>
           </div>
-          <!--Icones-->
-          <div class="d-block mb-4 container">
-            <div class="d-flex align-items-center justify-content-center ">
-                <div class="pe-5">
-                  <a href="#" class="redes-sociais">  
-                    <img src="assets/img/Linkedin.png" alt="Linkedin">
-                    <img src="assets/img/LinkedinAzul.png" alt="Linkedin">
-                  </a>
-                </div> 
-                <div class="pe-5">
-                  <a href="#" class="redes-sociais">  
-                    <img src="assets/img/Facebook.png" alt="Facebook">
-                    <img src="assets/img/FacebookAzul.png" alt="Facebook">
-                  </a>
-                </div> 
-                <div class="pe-5">
-                  <a href="#" class="redes-sociais">
-                    <img  src="assets/img/Instagram.png" alt="Instagram">
-                    <img  src="assets/img/InstagramAzul.png" alt="I nstagram">
-                  </a>
-                </div>  
-                <div class="pe-5">
-                  <a href="#" class="redes-sociais">
-                    <img src="assets/img/Twitter.png" alt="Twitter">
-                    <img src="assets/img/TwitterAzul.png" alt="Twitter">
-                  </a>
-                </div>  
-            </div>
+          <div class="pe-5">
+            <a class="text-decoration-none text-dark active fw-semibold" href="#">Loja</a>
           </div>
-        </div>
-        <!--Divizória final-->
-        <hr>
-        <div class="d-flex align-items-center justify-content-center container">
-          <div class="d-flex align-items-center justify-content-center text-center">
-            <p class="fw-semibold">© 2024 Direitos de Autor, Todos os direitos reservados</p>
+          <div class="pe-5">
+            <a class="text-decoration-none text-dark active fw-semibold" href="#" aria-disabled="true">Sobre</a>
+          </div>
+          <div class="">
+            <a class="text-decoration-none text-dark active fw-semibold" href="#" aria-disabled="true">Contactos</a>
           </div>
         </div>
       </div>
-      
-    <script src="assets/css/home.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <!--Icones-->
+      <div class="d-block mb-4 container">
+        <div class="d-flex align-items-center justify-content-center ">
+          <div class="pe-5">
+            <a href="#" class="redes-sociais">
+              <img src="assets/img/Linkedin.png" alt="Linkedin">
+              <img src="assets/img/LinkedinAzul.png" alt="Linkedin">
+            </a>
+          </div>
+          <div class="pe-5">
+            <a href="#" class="redes-sociais">
+              <img src="assets/img/Facebook.png" alt="Facebook">
+              <img src="assets/img/FacebookAzul.png" alt="Facebook">
+            </a>
+          </div>
+          <div class="pe-5">
+            <a href="#" class="redes-sociais">
+              <img src="assets/img/Instagram.png" alt="Instagram">
+              <img src="assets/img/InstagramAzul.png" alt="Instagram">
+            </a>
+          </div>
+          <div class="pe-5">
+            <a href="#" class="redes-sociais">
+              <img src="assets/img/Twitter.png" alt="Twitter">
+              <img src="assets/img/TwitterAzul.png" alt="Twitter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Divizória final-->
+    <hr>
+    <div class="d-flex align-items-center justify-content-center container">
+      <div class="d-flex align-items-center justify-content-center text-center">
+        <p class="fw-semibold">© 2024 Direitos de Autor, Todos os direitos reservados</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/javascript/javascript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
