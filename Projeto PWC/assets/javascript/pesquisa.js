@@ -1,7 +1,7 @@
 const searchInput = document.querySelector('input[type="search"]');
 
 function search() {
-    const cols = document.querySelectorAll('.col'); // Recarrega os elementos dos cards
+    const cols = document.querySelectorAll('.col');
     searchInput.addEventListener('input', function () {
         const searchTerm = searchInput.value.toLowerCase().trim();
         cols.forEach(col => {
