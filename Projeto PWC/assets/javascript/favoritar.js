@@ -1,21 +1,26 @@
-//Fazer o botao dos favoritos mudar
-var buttons = document.getElementsByClassName('starButton');
-
 function favoritar() {
-    for (let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function () {
-            // Seleciona o ícone dentro do botão clicado
-            var icon = this.querySelector('.icon');
+    const starButtons = document.querySelectorAll('.starButton');
 
-            if (icon.classList.contains('bi-star')) {
-                icon.classList.remove('bi-star');
-                icon.classList.add('bi-star-fill');
+    starButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const countryName = button.parentElement.querySelector('.card-title').textContent;
+
+            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+            if (favorites.includes(countryName)) {
+                const index = favorites.indexOf(countryName);
+                if (index !== -1)
+                    favorites.splice(index, 1);
+                button.querySelector('.icon').classList.replace('bi-star-fill', 'bi-star');
             } else {
-                icon.classList.remove('bi-star-fill');
-                icon.classList.add('bi-star');
+                favorites.push(countryName);
+                button.querySelector('.icon').classList.replace('bi-star', 'bi-star-fill');
             }
+            console.log(...favorites);
+
+            localStorage.setItem('favorites', JSON.stringify(favorites));
         });
-    }
+    });
 }
 
 favoritar();
