@@ -5,7 +5,7 @@ function favoritar() {
         button.addEventListener('click', () => {
             const countryName = button.parentElement.querySelector('.card-title').textContent;
 
-            let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+            let favorites = JSON.parse(localStorage.getItem('favorites'));
 
             if (favorites.includes(countryName)) {
                 const index = favorites.indexOf(countryName);
@@ -16,11 +16,7 @@ function favoritar() {
                 favorites.push(countryName);
                 button.querySelector('.icon').classList.replace('bi-star', 'bi-star-fill');
             }
-            console.log(...favorites);
-
             localStorage.setItem('favorites', JSON.stringify(favorites));
         });
     });
 }
-
-favoritar();

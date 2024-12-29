@@ -57,8 +57,33 @@
       </div>
     </nav>
   </div>
+  <!--Conteudo-->
+  <div class="container mt-4">
+    <div class="d-flex align-items-center justify-content-center">
+      <h1 id="countryName"></h1>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <img id="countryFlag" class="img-fluid mb-4 card-shadow" alt="Bandeira">
+    </div>
+  </div>
+  <div class="d-flex  justify-content-center">
+    <table class="table text-center">
+      <tbody>
+        <tr class="align-middle">
+          <th>Região</th>
+          <th>População</th>
+          <th>Capital</th>
+        </tr>
+        <tr>
+          <td><span id="countryRegion"></span></td>
+          <td><span id="countryPopulation"></span></td>
+          <td><span id="countryCapital"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <!--Footer-->
-  <div class="bg-light pt-5">
+  <div class="bg-light pt-5 position-fixed bottom-0 w-100">
     <div>
       <div class="d-flex align-items-center justify-content-center">
         <img class="tamanho-logo-footer" src="assets/img/LogotipoPretoPolitécnico.png">
@@ -122,9 +147,8 @@
     </div>
   </div>
 
-  <script src="assets/javascript/api.js"></script>
+  <script src="assets/javascript/detalhes.js"></script>
   <script src="assets/javascript/favoritar.js"></script>
-  <script src="assets/javascript/pesquisa.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
