@@ -92,3 +92,7 @@
 .barra-de-pesquisa{
     width: 415px;
 }
+/*Cor do botão de favorito*/
+.starButton .icon.bi-star-fill {
+    color: gold;
+}
