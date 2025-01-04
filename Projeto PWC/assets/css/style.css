@@ -96,3 +96,8 @@
 .starButton .icon.bi-star-fill {
     color: gold;
 }
+/* Max altura card */
+.card-height{
+    height: 200px;
+    width: 100%;
+}
